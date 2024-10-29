@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: gray;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 500px;
+    }
+    .main{
+        background-color: white;
+        display: grid;
+    }
+    img{
+        width: 100px;
+    }
+    .user{
+        display: grid;
+        grid-template-columns: min-content max-content;
+        margin: 15px;
+        gap: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid lightgray;
+    }
+    .user2{
+        display: grid;
+        grid-template-rows: min-content min-content;
+        gap: 5px;
+        align-content: center;
+        color: lightgray;
+    }
+    p{margin: 0%;}
+    b{color: black;}
+
+</style>
+<body>
+    <div class="main">
+        <div class="user">
+            <img src="https://cdn-icons-png.flaticon.com/512/12225/12225935.png">
+            <div class="user2">
+            <p><b>Linda Hart</b></p>
+            <p>6765 Shady Ln Dr</p>
+            </div> 
+        </div>
+        <div class="user">
+            <img src="https://cdn-icons-png.flaticon.com/512/12225/12225935.png">
+            <div class="user2">
+                <p><b>Roger Medina</b></p>
+                <p>2420 paddock way</p>     
+            </div>
+        </div>
+        <div class="user">
+            <img src="https://cdn-icons-png.flaticon.com/512/12225/12225935.png">
+            <div class="user2">
+                <p><b>Dean Sullivan</b></p>
+                <p>6727 Airplane Ave</p>     
+            </div>
+        </div>
+        <div class="user"><img src="https://cdn-icons-png.flaticon.com/512/12225/12225935.png">
+            <div class="user2">
+                <p><b>Elizabeth Austin</b></p>
+                <p>6685 Blossom Hill Rd</p>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

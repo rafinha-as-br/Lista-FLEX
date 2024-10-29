@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        width: 100%;
+        height: 100%;
+    }
+    .main{
+        display: flex;
+        width: 100%;
+        height: 100svh;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+        
+    p{
+        visibility: hidden;
+        position: absolute;
+        font-size: 40px;
+        color: white;
+        left: 4%;
+        bottom: 0%;
+    }
+
+    img{
+        width: 70px;
+        height: 400px;
+        border-radius: 60px;
+        object-fit: cover;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+
+    }
+
+    .box:hover img{
+        width: 600px;
+        height: 450px;
+    }
+
+    .box:hover p{
+        visibility: visible;
+        transition:ease-in;
+    }
+
+
+
+</style>
+<body>
+    <div class="main">
+        <div class="box">
+            <img id="img1" src="https://www.clubedafotografia.com/wp-content/uploads/2010/01/lago-canadense-verde.webp">
+                <p>Lago Canadense</p>
+        </div>
+        <div class="box">
+            <img id="img2" src="https://www.queroviajarmais.com/wp-content/uploads/2020/08/da-nang-bay.jpg">
+            <p> Baía de Da Nang, Vietnã</p>
+        </div>
+        <div class="box">
+            <img id="img3" src="https://blog.emania.com.br/wp-content/uploads/2015/12/Papel-de-Parede-de-Paisagem.jpg">
+        </div>
+        <div class="box">
+            <img id="img4" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/09/milford-sound-nova-zelandia.jpg">
+        </div>
+        <div class="box">
+            <img id="img5" src="https://www.viajali.com.br/wp-content/uploads/2018/05/paisagens-bonitas-6.jpg">
+        </div>
+    </div>
+</body>
+</html>

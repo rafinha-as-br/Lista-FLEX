@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{border: 1px solid black;}
+    span{
+        display:inline-block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: aqua;
+        margin: 10px;
+    }
+    .container{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "nav cabecalho cabecalho"
+            "nav conteudo conteudo"
+            "nav rodape rodape"
+            ;
+            grid-template-rows: 10svh 40svh 40svh 10svh;
+            .header{
+                grid-area: header;
+            }
+            .navegacao{
+            grid-area: nav;
+            background-color: orange;
+            }
+            .cabecalho{
+                grid-area: cabecalho;
+            }
+            .conteudo{
+                grid-area: conteudo;
+                background-color:blueviolet;
+            }
+            .rodape{
+                grid-area: rodape;
+                background-color:darkcyan;
+            }
+            
+        }
+    </style>
+</head>
+<body class="container">
+    <div class="header"><span></span><span></span><span></span></div>
+    <div class="navegacao">navegacao</div>
+    <div class="cabecalho">Cabeçalho</div>
+    <div class="conteudo">conteudo</div>
+    <div class="rodape">rodape</div>
+
+</body>
+</html>
