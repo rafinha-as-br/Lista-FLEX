@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width", initial-scale=1.0>
+    <title>Questão 4</title>
     <style>
-            *{border: 1px solid black;}
     span{
         display:inline-block;
         height: 30px;
@@ -22,24 +21,39 @@
             "nav conteudo conteudo"
             "nav rodape rodape"
             ;
-            grid-template-rows: 10svh 40svh 40svh 10svh;
+            grid-template-rows: 20svh 25svh 80svh 10svh;
             .header{
                 grid-area: header;
+                background-color: dimgray;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                display: flex;
+                align-items: center;
+                padding-top: 10px;
             }
             .navegacao{
             grid-area: nav;
             background-color: orange;
+            text-align: center;
+            color: white;
             }
             .cabecalho{
                 grid-area: cabecalho;
+                text-align: center;
+                color: white;
+                background-color:dodgerblue;
             }
             .conteudo{
                 grid-area: conteudo;
                 background-color:blueviolet;
+                text-align: center;
+                color: white;
             }
             .rodape{
                 grid-area: rodape;
                 background-color:darkcyan;
+                text-align: center;
+                color: white;
             }
             
         }
@@ -47,10 +61,10 @@
 </head>
 <body class="container">
     <div class="header"><span></span><span></span><span></span></div>
-    <div class="navegacao">navegacao</div>
-    <div class="cabecalho">Cabeçalho</div>
-    <div class="conteudo">conteudo</div>
-    <div class="rodape">rodape</div>
+    <div class="navegacao">NAVEGAÇÃO</div>
+    <div class="cabecalho">CABEÇALHO</div>
+    <div class="conteudo">CONTEÚDO</div>
+    <div class="rodape">RODAPÉ</div>
 
 </body>
 </html>
